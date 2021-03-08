@@ -3,11 +3,14 @@
 //'"Creativity takes courage" - Henry Matisse'
 //]
 
-function Image(title, url, author, tags) {
+function Image(title, url, tags) {
     this.title = title;
     this.url = "images/" + url;
-    this.author = author;
+//    this.author = author;
     this.tags = tags;
+    
+    console.log(this.tags)
+    
 //    this.color = color;
     this.display = function(){
         
@@ -16,12 +19,14 @@ function Image(title, url, author, tags) {
             container.addClass(tag);
         })
         
-        container.css("background", this.color)
-        container.addClass("images")
+//        container.css("background", this.color)
+        container.addClass("image")
         
         var imageString = "";
-        imageString += "<img src='" + "images/car.jpg" + "</img>";
-        imageString += "<cite>" + this.author + "</cite>";
+        imageString += "<img src='" + this.url + "'>";
+//        imageString += "<cite>" + this.author + "</cite>";
+        
+        console.log(imageString)
         
         container.html(imageString)
         $(".images").prepend(container)
@@ -35,7 +40,7 @@ function Image(title, url, author, tags) {
 //    ]
 
 
-var Images = 
+var Images = [
     new Image("cliffs", "cliffs.jpg", ["cliffs", "water", "blue", "orange"]),
     new Image("leaves", "greenery.jpg", ["leaves", "forest", "green"]),
     new Image("fall", "fall.jpg", ["yellow", "orange", "water", "blue", "trees"]),
@@ -46,7 +51,7 @@ var Images =
     new Image("waterfall", "waterfall.jpg", ["waterfall", "blue", "cliff"]),
     new Image("lake view", "waterview.jpg", ["lake", "water", "wood", "fall"]),
     new Image("wood and mountains", "wood.jpg", ["wood", "mountain", "water", "blue"])
-    
+    ]
    
 // global taglist
 var tagList = []
