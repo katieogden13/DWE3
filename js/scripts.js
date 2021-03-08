@@ -3,51 +3,56 @@
 //'"Creativity takes courage" - Henry Matisse'
 //]
 
-function Quote(quoteText, author, tags, color) {
-    this.quote = quoteText;
+function Image(title, url, author, tags) {
+    this.title = title;
+    this.url = "images/" + url;
     this.author = author;
     this.tags = tags;
-    this.color = color;
+//    this.color = color;
     this.display = function(){
         
         var container = $("<div>")
         this.tags.forEach(function(tag){
-            container.addClass(tag)
+            container.addClass(tag);
         })
         
         container.css("background", this.color)
-        container.addClass("quote")
+        container.addClass("images")
         
-        var quoteString = "";
-        quoteString += "<p>" + this.quote + "</p>";
-        quoteString += "<cite>" + this.author + "</cite>";
+        var imageString = "";
+        imageString += "<img src='" + "images/car.jpg" + "</img>";
+        imageString += "<cite>" + this.author + "</cite>";
         
-        container.html(quoteString)
-        $(".quotes").prepend(container)
+        container.html(imageString)
+        $(".images").prepend(container)
     }
 }
 
-var quotes = [
-    new Quote(
-    '"We don\'t make mistakes, just happy little accidents"', 
-    "Bob Ross", 
-    ["painting", "mistakes"], 
-    "#0A3410"),
-
-    new Quote(
-    '"Creativity takes courage"',
-    "Henry Matisse",
-    ["creativity", "painting"],
-    "#ff9966")
-
-    ]
+//var quotes = [
+//    new Quote('"We don\'t make mistakes, just happy little accidents"', "Bob Ross", ["painting", "mistakes"], "#0A3410"),
+//
+//    new Quote('"Creativity takes courage"', "Henry Matisse", ["creativity", "painting"], "#ff9966")
+//    ]
 
 
+var Images = 
+    new Image("car", "car.jpg", ["vehicle", "headlight", "white"]),
+    new Image("leaves", "greenery.jpg", ["leaves", "forest", "green"]),
+    new Image("gearshift", "gear.jpg", ["8ball", "gearshift", "manual", "black"]),
+    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth"]),
+    new Image("snowy mountain", "snowymountain.jpg", ["mountain", "snow", "white"]),
+    new Image("mountain in sun", "sunnymountain.jpg", ["sunny", "mountain", "summer", "lake", "blue", "white"]),
+    new Image("tractor", "tractor.jpg", ["tractor", "field", "red"]),
+    new Image("waterfall", "waterfall.jpg", ["waterfall", "blue", "cliff"]),
+    new Image("lake view", "waterview.jpg", ["lake", "water", "wood", "fall"]),
+    new Image("wood and mountains", "wood.jpg", ["wood", "mountain", "water", "blue"])
+    
+   
 // global taglist
 var tagList = []
-quotes.forEach(function(quote){
-    quote.display();
-    quote.tags.forEach(function(tag){
+Images.forEach(function(image){
+    image.display();
+    image.tags.forEach(function(tag){
         // check to see if tag has been added to taglist
         if(!tagList.includes(tag)) {
             // if it isn't added, add it
@@ -65,7 +70,7 @@ $(".filter").on("click", function(){
     console.log(tag)
     
     $("." + tag).fadeIn();
-    $(".quote").not("." + tag).hide();
+    $(".image").not("." + tag).hide();
     
     $(".filter").removeClass("active")
     $(this).addClass("active")
