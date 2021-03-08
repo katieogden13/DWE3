@@ -6,7 +6,7 @@
 function Image(title, url, tags, author) {
     this.title = title;
     this.url = "images/" + url;
-//    this.author = author;
+    this.author = author;
     this.tags = tags;
     
     console.log(this.tags)
@@ -24,7 +24,7 @@ function Image(title, url, tags, author) {
         
         var imageString = "";
         imageString += "<img src='" + this.url + "'>";
-//        imageString += "<cite>" + this.author + "</cite>";
+        imageString += "<cite>" + this.author + "</cite>";
         
         console.log(imageString)
         
@@ -41,16 +41,16 @@ function Image(title, url, tags, author) {
 
 
 var Images = [
-    new Image("cliffs", "cliffs.jpg", ["cliffs", "water", "blue", "orange"], "Katie Ogden"),
-    new Image("leaves", "greenery.jpg", ["leaves", "forest", "green"], "Katie Ogden"),
-    new Image("fall", "fall.jpg", ["yellow", "orange", "water", "blue", "trees"], "Katie Ogden"),
-    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth", "yellow"], "Katie Ogden"),
-    new Image("snowy mountain", "snowymountain.jpg", ["mountain", "snow", "white"], "Katie Ogden"),
-    new Image("mountain in sun", "sunnymountain.jpg", ["sunny", "mountain", "summer", "lake", "blue", "white"], "Katie Ogden"),
-    new Image("tractor", "tractor.jpg", ["tractor", "field", "red", "yellow"], "Katie Ogden"),
-    new Image("waterfall", "waterfall.jpg", ["waterfall", "blue", "cliff"], "Katie Ogden"),
-    new Image("lake view", "waterview.jpg", ["lake", "water", "wood", "fall"], "Katie Ogden"),
-    new Image("wood and mountains", "wood.jpg", ["wood", "mountain", "water", "blue"], "Katie Ogden")
+    new Image("cliffs", "cliffs.jpg", ["cliffs", "water", "blue", "orange", "outdoors"], "Katie Ogden"),
+    new Image("leaves", "greenery.jpg", ["leaves", "forest", "green", "outdoors"], "Katie Ogden"),
+    new Image("fall", "fall.jpg", ["yellow", "orange", "water", "blue", "trees", "cliffs", "outdoors"], "Katie Ogden"),
+    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth", "yellow", "outdoors"], "Katie Ogden"),
+    new Image("snowy mountain", "snowymountain.jpg", ["mountain", "snow", "white", "outdoors"], "Katie Ogden"),
+    new Image("mountain in sun", "sunnymountain.jpg", ["sunny", "mountain", "summer", "lake", "blue", "white", "outdoors"], "Katie Ogden"),
+    new Image("tractor", "tractor.jpg", ["tractor", "field", "red", "yellow", "outdoors"], "Katie Ogden"),
+    new Image("waterfall", "waterfall.jpg", ["waterfall", "blue", "cliffs", "outdoors"], "Katie Ogden"),
+    new Image("lake view", "waterview.jpg", ["lake", "water", "wood", "fall", "outdoors"], "Katie Ogden"),
+    new Image("wood and mountains", "wood.jpg", ["wood", "mountain", "water", "blue", "outdoors"], "Katie Ogden")
     ]
    
 // global taglist
