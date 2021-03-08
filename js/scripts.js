@@ -36,13 +36,13 @@ function Image(title, url, author, tags) {
 
 
 var Images = 
-    new Image("car", "car.jpg", ["vehicle", "headlight", "white"]),
+    new Image("cliffs", "cliffs.jpg", ["cliffs", "water", "blue", "orange"]),
     new Image("leaves", "greenery.jpg", ["leaves", "forest", "green"]),
-    new Image("gearshift", "gear.jpg", ["8ball", "gearshift", "manual", "black"]),
-    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth"]),
+    new Image("fall", "fall.jpg", ["yellow", "orange", "water", "blue", "trees"]),
+    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth", "yellow"]),
     new Image("snowy mountain", "snowymountain.jpg", ["mountain", "snow", "white"]),
     new Image("mountain in sun", "sunnymountain.jpg", ["sunny", "mountain", "summer", "lake", "blue", "white"]),
-    new Image("tractor", "tractor.jpg", ["tractor", "field", "red"]),
+    new Image("tractor", "tractor.jpg", ["tractor", "field", "red", "yellow"]),
     new Image("waterfall", "waterfall.jpg", ["waterfall", "blue", "cliff"]),
     new Image("lake view", "waterview.jpg", ["lake", "water", "wood", "fall"]),
     new Image("wood and mountains", "wood.jpg", ["wood", "mountain", "water", "blue"])
