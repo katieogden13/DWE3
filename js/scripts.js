@@ -44,7 +44,7 @@ var Images = [
     new Image("cliffs", "cliffs.jpg", ["cliffs", "water", "blue", "orange", "outdoors"], "Katie Ogden"),
     new Image("leaves", "greenery.jpg", ["leaves", "forest", "green", "outdoors"], "Katie Ogden"),
     new Image("fall", "fall.jpg", ["yellow", "orange", "water", "blue", "trees", "cliffs", "outdoors"], "Katie Ogden"),
-    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth", "yellow", "outdoors"], "Katie Ogden"),
+    new Image("rocks", "rocks.jpg", ["rocks", "yellow", "outdoors"], "Katie Ogden"),
     new Image("snowy mountain", "snowymountain.jpg", ["mountain", "snow", "white", "outdoors"], "Katie Ogden"),
     new Image("mountain in sun", "sunnymountain.jpg", ["sunny", "mountain", "summer", "lake", "blue", "white", "outdoors"], "Katie Ogden"),
     new Image("tractor", "tractor.jpg", ["tractor", "field", "red", "yellow", "outdoors"], "Katie Ogden"),
