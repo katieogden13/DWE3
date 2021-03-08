@@ -11,12 +11,17 @@ img {
     max-width: 100%; 
 }
 
-body{
+.quotes {
     color: white;
+    display: flex;
 }
 
-div{
+div > div {
     width: 200px; 
     height: 200px; 
     padding: 20px; 
+}
+
+.active{
+    background-color: cadetblue;
 }
