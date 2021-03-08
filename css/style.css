@@ -5,24 +5,35 @@
 html, body {
     min-height: 100vh;
     margin: 0;
+    background-color: #eeeeee;
+    
 }
 
 img {
     max-width: 100%; 
+    padding: 2px;
+
 }
 
 .images {
     color: white;
     display: flex;
-    
+ 
 }
 
 div > div {
     width: 200px; 
     height: 200px; 
-    padding: 20px; 
+    padding: 30px; 
 }
 
 .active{
     background-color: cadetblue;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
 }

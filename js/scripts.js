@@ -3,7 +3,7 @@
 //'"Creativity takes courage" - Henry Matisse'
 //]
 
-function Image(title, url, tags) {
+function Image(title, url, tags, author) {
     this.title = title;
     this.url = "images/" + url;
 //    this.author = author;
@@ -41,16 +41,16 @@ function Image(title, url, tags) {
 
 
 var Images = [
-    new Image("cliffs", "cliffs.jpg", ["cliffs", "water", "blue", "orange"]),
-    new Image("leaves", "greenery.jpg", ["leaves", "forest", "green"]),
-    new Image("fall", "fall.jpg", ["yellow", "orange", "water", "blue", "trees"]),
-    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth", "yellow"]),
-    new Image("snowy mountain", "snowymountain.jpg", ["mountain", "snow", "white"]),
-    new Image("mountain in sun", "sunnymountain.jpg", ["sunny", "mountain", "summer", "lake", "blue", "white"]),
-    new Image("tractor", "tractor.jpg", ["tractor", "field", "red", "yellow"]),
-    new Image("waterfall", "waterfall.jpg", ["waterfall", "blue", "cliff"]),
-    new Image("lake view", "waterview.jpg", ["lake", "water", "wood", "fall"]),
-    new Image("wood and mountains", "wood.jpg", ["wood", "mountain", "water", "blue"])
+    new Image("cliffs", "cliffs.jpg", ["cliffs", "water", "blue", "orange"], "Katie Ogden"),
+    new Image("leaves", "greenery.jpg", ["leaves", "forest", "green"], "Katie Ogden"),
+    new Image("fall", "fall.jpg", ["yellow", "orange", "water", "blue", "trees"], "Katie Ogden"),
+    new Image("rocks", "rocks.jpg", ["inukshuk", "rocks", "earth", "yellow"], "Katie Ogden"),
+    new Image("snowy mountain", "snowymountain.jpg", ["mountain", "snow", "white"], "Katie Ogden"),
+    new Image("mountain in sun", "sunnymountain.jpg", ["sunny", "mountain", "summer", "lake", "blue", "white"], "Katie Ogden"),
+    new Image("tractor", "tractor.jpg", ["tractor", "field", "red", "yellow"], "Katie Ogden"),
+    new Image("waterfall", "waterfall.jpg", ["waterfall", "blue", "cliff"], "Katie Ogden"),
+    new Image("lake view", "waterview.jpg", ["lake", "water", "wood", "fall"], "Katie Ogden"),
+    new Image("wood and mountains", "wood.jpg", ["wood", "mountain", "water", "blue"], "Katie Ogden")
     ]
    
 // global taglist
